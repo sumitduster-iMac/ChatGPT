@@ -10,7 +10,8 @@
     "build:win": "electron-builder --win",
     "build:linux": "electron-builder --linux",
     "dist": "electron-builder --mac --win --linux",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "generate-icons": "node scripts/generate-icons.mjs"
   },
   "keywords": [
     "chatgpt",
@@ -19,11 +20,16 @@
     "desktop",
     "electron"
   ],
-  "author": "",
+  "author": {
+    "name": "ChatGPT App",
+    "email": "chatgpt-app@example.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron": "^28.1.0",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^24.9.1",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5"
   },
   "build": {
     "appId": "com.chatgpt.app",
@@ -42,10 +48,16 @@
     ],
     "mac": {
       "category": "public.app-category.productivity",
-      "icon": "assets/icon.icns",
+      "icon": "assets/icon.iconset",
       "target": [
-        "dmg",
-        "zip"
+        {
+          "target": "dmg",
+          "arch": "universal"
+        },
+        {
+          "target": "zip",
+          "arch": "universal"
+        }
       ]
     },
     "win": {
@@ -61,7 +73,8 @@
         "AppImage",
         "deb"
       ],
-      "category": "Utility"
+      "category": "Utility",
+      "maintainer": "chatgpt-app@example.com"
     }
   }
 }
