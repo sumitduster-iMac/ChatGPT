@@ -57,3 +57,70 @@ h1 {
   color: #10a37f;
   margin-top: 0.25rem;
 }
+
+.developer-credit {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.developer-credit p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.developer-credit strong {
+  color: #10a37f;
+  font-weight: 600;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 163, 127, 0.1);
+  border: 1px solid rgba(16, 163, 127, 0.3);
+  border-radius: 8px;
+  color: #10a37f;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.github-link:hover {
+  background: rgba(16, 163, 127, 0.2);
+  border-color: #10a37f;
+  transform: translateY(-1px);
+}
+
+.github-link svg {
+  fill: #10a37f;
+}
+
+.exit-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 2rem;
+  background: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exit-btn:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.exit-btn:active {
+  transform: translateY(0);
+}

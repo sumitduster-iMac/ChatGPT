@@ -19,7 +19,12 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js')
     },
     icon: path.join(__dirname, 'icon.svg'),
-    titleBarStyle: 'default',
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#212121',
+      symbolColor: '#ffffff',
+      height: 40
+    },
     show: false
   });
 

@@ -68,6 +68,28 @@ h1 {
   }
 }
 
+.developer-credit {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.developer-credit p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.developer-credit .github-link {
+  color: #10a37f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.developer-credit .github-link:hover {
+  color: #12b886;
+  text-decoration: underline;
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   body {
