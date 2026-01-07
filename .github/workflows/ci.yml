@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check package.json
+        run: npm run --if-present lint
+
+      - name: Verify build setup
+        run: |
+          echo "Verifying Electron build configuration..."
+          node -e "const pkg = require('./package.json'); console.log('App:', pkg.name, pkg.version);"
+
+  build-swift:
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build macOS App
+        run: |
+          xcodebuild -project ChatGPT/ChatGPT.xcodeproj \
+            -scheme ChatGPT \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Upload macOS Swift App
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-swift-app
+          path: build/Build/Products/Release/ChatGPT.app
+          retention-days: 30
