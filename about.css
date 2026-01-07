@@ -102,3 +102,25 @@ h1 {
 .github-link svg {
   fill: #10a37f;
 }
+
+.exit-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 2rem;
+  background: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exit-btn:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.exit-btn:active {
+  transform: translateY(0);
+}
