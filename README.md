@@ -111,6 +111,14 @@ This app loads: **https://chatgpt.com/**
 
 ---
 
+## Screenshot
+
+<img width="1208" height="807" alt="Screenshot 2026-01-07 at 6 51 12 PM" src="https://github.com/user-attachments/assets/ed531a9f-13c8-4c16-b349-91b0d0048565" />
+
+
+<img width="413" height="282" alt="Screenshot 2026-01-07 at 6 51 45 PM" src="https://github.com/user-attachments/assets/826971f7-a055-4e4b-af0c-39a6200b82bd" />
+
+
 ## 👨‍💻 Developer
 
 **Enchanted UI developed by [Sumit Duster](https://github.com/sumitduster-iMac)** ✨
