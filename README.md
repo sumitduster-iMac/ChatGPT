@@ -1,1 +1,33 @@
-# ChatGPT
+# ChatGPT Desktop App
+
+A native desktop application for [ChatGPT](https://chatgpt.com/).
+
+## Features
+
+- 🖥️ **Native Desktop Experience** - Run ChatGPT as a standalone app
+- 🍎 **macOS Native App** - Built with SwiftUI for optimal performance
+- 💻 **Cross-Platform Electron** - Available for Windows, macOS, and Linux
+- 🔒 **Persistent Sessions** - Stay logged in between sessions
+- ⌨️ **Keyboard Shortcuts** - Quick access with native shortcuts
+- 🌙 **Dark Mode** - Beautiful dark interface
+
+## Quick Start
+
+### Electron (Cross-Platform)
+
+```bash
+npm install
+npm start
+```
+
+### macOS Native
+
+Open `ChatGPT/ChatGPT.xcodeproj` in Xcode and build.
+
+## URL
+
+This app loads: **https://chatgpt.com/**
+
+## License
+
+MIT
