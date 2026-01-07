@@ -1,41 +1,134 @@
-# ChatGPT Desktop App
+<p align="center">
+  <img src="assets/icon.png" alt="ChatGPT Desktop App" width="128" height="128">
+</p>
 
-A native desktop application for [ChatGPT](https://chatgpt.com/).
+<h1 align="center">ChatGPT Desktop App</h1>
 
-**Enchanted UI developed by [Sumit Duster](https://github.com/sumitduster-iMac)** ✨
+<p align="center">
+  <strong>A beautiful native desktop application for <a href="https://chatgpt.com/">ChatGPT</a></strong>
+</p>
 
-## Features
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#building">Building</a> •
+  <a href="#license">License</a>
+</p>
 
-- 🖥️ **Native Desktop Experience** - Run ChatGPT as a standalone app
-- 🍎 **macOS Native App** - Built with SwiftUI for optimal performance
-- 💻 **Cross-Platform Electron** - Available for Windows, macOS, and Linux
-- 🔒 **Persistent Sessions** - Stay logged in between sessions
-- ⌨️ **Keyboard Shortcuts** - Quick access with native shortcuts
-- 🌙 **Dark Mode** - Beautiful dark interface
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-blue?style=flat-square" alt="Platform">
+  <img src="https://img.shields.io/badge/electron-28.1.0-47848F?style=flat-square&logo=electron" alt="Electron">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+</p>
 
-## Quick Start
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🖥️ **Native Desktop Experience** | Run ChatGPT as a standalone desktop application |
+| 🍎 **macOS Native App** | Built with SwiftUI for optimal performance on Mac |
+| 💻 **Cross-Platform** | Available for Windows, macOS, and Linux via Electron |
+| 🔒 **Persistent Sessions** | Stay logged in between sessions |
+| ⌨️ **Keyboard Shortcuts** | Quick access with native keyboard shortcuts |
+| 🌙 **Dark Mode** | Beautiful dark interface that's easy on the eyes |
+| 🚀 **Lightweight** | Minimal resource usage for a smooth experience |
+
+---
+
+## 📦 Installation
+
+### Pre-built Releases
+
+Download the latest release for your platform from the [Releases](../../releases) page.
+
+| Platform | Download |
+|----------|----------|
+| macOS | `.dmg` or `.zip` |
+| Windows | `.exe` (installer) or portable |
+| Linux | `.AppImage` or `.deb` |
+
+---
+
+## 🚀 Quick Start
 
 ### Electron (Cross-Platform)
 
 ```bash
+# Clone the repository
+git clone https://github.com/sumitduster-iMac/chatgpt-app.git
+cd chatgpt-app
+
+# Install dependencies
 npm install
+
+# Start the app
 npm start
 ```
 
-### macOS Native
+### macOS Native (SwiftUI)
 
-Open `ChatGPT/ChatGPT.xcodeproj` in Xcode and build.
+1. Open `ChatGPT/ChatGPT.xcodeproj` in Xcode
+2. Select your target device
+3. Click **Run** (⌘R) to build and launch
 
-## URL
+---
+
+## 🔨 Building
+
+### Build for All Platforms
+
+```bash
+npm run dist
+```
+
+### Build for Specific Platform
+
+```bash
+# macOS
+npm run build:mac
+
+# Windows
+npm run build:win
+
+# Linux
+npm run build:linux
+```
+
+### Generate App Icons
+
+```bash
+npm run generate-icons
+```
+
+---
+
+## 🌐 URL
 
 This app loads: **https://chatgpt.com/**
 
-## Developer
+---
 
-Enchanted UI developed by **Sumit Duster**
+## 👨‍💻 Developer
 
-[![GitHub](https://img.shields.io/badge/GitHub-sumitduster--iMac-181717?style=for-the-badge&logo=github)](https://github.com/sumitduster-iMac)
+**Enchanted UI developed by [Sumit Duster](https://github.com/sumitduster-iMac)** ✨
 
-## License
+<p align="center">
+  <a href="https://github.com/sumitduster-iMac">
+    <img src="https://img.shields.io/badge/GitHub-sumitduster--iMac-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
 
-MIT
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Made with ❤️ for the ChatGPT community
+</p>
