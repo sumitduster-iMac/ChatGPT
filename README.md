@@ -2,7 +2,7 @@
 
 A native desktop application for [ChatGPT](https://chatgpt.com/).
 
-**Enchanted UI developed by [Sumit Duster](https://github.com/SumitDuster)** ✨
+**Enchanted UI developed by [Sumit Duster](https://github.com/sumitduster-iMac)** ✨
 
 ## Features
 
@@ -34,7 +34,7 @@ This app loads: **https://chatgpt.com/**
 
 Enchanted UI developed by **Sumit Duster**
 
-[![GitHub](https://img.shields.io/badge/GitHub-SumitDuster-181717?style=for-the-badge&logo=github)](https://github.com/SumitDuster)
+[![GitHub](https://img.shields.io/badge/GitHub-sumitduster--iMac-181717?style=for-the-badge&logo=github)](https://github.com/sumitduster-iMac)
 
 ## License
 
