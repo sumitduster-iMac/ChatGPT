@@ -20,7 +20,10 @@
     "desktop",
     "electron"
   ],
-  "author": "",
+  "author": {
+    "name": "ChatGPT App",
+    "email": "chatgpt-app@example.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron": "^28.1.0",
@@ -62,7 +65,8 @@
         "AppImage",
         "deb"
       ],
-      "category": "Utility"
+      "category": "Utility",
+      "maintainer": "chatgpt-app@example.com"
     }
   }
 }
