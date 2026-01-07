@@ -7,6 +7,7 @@
     "start": "electron .",
     "build": "electron-builder",
     "build:mac": "electron-builder --mac",
+    "build:mac-dmg": "electron-builder --mac dmg",
     "build:win": "electron-builder --win",
     "build:linux": "electron-builder --linux",
     "dist": "electron-builder --mac --win --linux",
@@ -44,7 +45,7 @@
       "category": "public.app-category.productivity",
       "icon": "assets/icon.icns",
       "target": [
-        "dmg",
+        "dir",
         "zip"
       ]
     },
